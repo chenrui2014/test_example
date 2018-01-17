@@ -1,0 +1,24 @@
+{
+  "name": "test_mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
+    "mochawesome": "^3.0.1",
+    "node-fetch": "^1.7.3",
+    "superagent": "^3.8.2"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1"
+  }
+}

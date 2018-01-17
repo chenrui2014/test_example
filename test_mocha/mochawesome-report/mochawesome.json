@@ -1,0 +1,339 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-01-17T08:02:15.862Z",
+    "end": "2018-01-17T08:02:26.227Z",
+    "duration": 10365,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "efd787a3-7fda-4587-b40c-7d5145435117",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "4941dbac-b811-41f1-97a8-cfd3170f9b89",
+        "title": "加法函数测试",
+        "fullFile": "D:\\ws_workspace\\test_example\\test_mocha\\test\\add.test.js",
+        "file": "\\test\\add.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "1+1=2",
+            "fullTitle": "加法函数测试 1+1=2",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect((0, _add2.default)(1, 1)).to.be.equal(2);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0fda7fba-d351-4fe9-b274-4d641f62c1fd",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "0fda7fba-d351-4fe9-b274-4d641f62c1fd"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 5000
+      },
+      {
+        "uuid": "d74d74c0-8109-41ea-a708-9c8a35cc03ef",
+        "title": "async.test.js - 异步测试",
+        "fullFile": "D:\\ws_workspace\\test_example\\test_mocha\\test\\async.test.js",
+        "file": "\\test\\async.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "异步请求应该返回一个对象",
+            "fullTitle": "async.test.js - 异步测试 异步请求应该返回一个对象",
+            "timedOut": false,
+            "duration": 4740,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "_superagent2.default.get('https://api.github.com').end(function (err, res) {\n            expect(res).to.be.an('object');\n            done();\n        });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "fad66ae9-a2b8-4d47-b994-40d06499e6c5",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "fad66ae9-a2b8-4d47-b994-40d06499e6c5"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 4740,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 5000
+      },
+      {
+        "uuid": "09d6c67c-a157-4629-8c68-66a159fa2423",
+        "title": "beforeEach示例",
+        "fullFile": "D:\\ws_workspace\\test_example\\test_mocha\\test\\beforeEach.test.js",
+        "file": "\\test\\beforeEach.test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "beforeEach示例 \"before each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "foo = true;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b33d1c52-8dbb-4165-8a72-ee74bb776d02",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "修改全局变量应该成功",
+            "fullTitle": "beforeEach示例 修改全局变量应该成功",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(foo).to.be.ok;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0de85669-818f-4ab6-b206-6221c05f4eb0",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "0de85669-818f-4ab6-b206-6221c05f4eb0"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 5000
+      },
+      {
+        "uuid": "6e69a1ab-3270-4fa4-8f50-ff213f3b8d73",
+        "title": "Hook示例",
+        "fullFile": "D:\\ws_workspace\\test_example\\test_mocha\\test\\beforeEach_async.test.js",
+        "file": "\\test\\beforeEach_async.test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "Hook示例 \"before each\" hook",
+            "timedOut": false,
+            "duration": 51,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "setTimeout(function () {\n    foo = true;\n    done();\n}, 50);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a7f2c177-e8ef-4b5f-a7b1-2115693a4c16",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "全局变量异步修改应该成功",
+            "fullTitle": "Hook示例 全局变量异步修改应该成功",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(foo).to.be.ok;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "cb3bcc7b-b7ed-4250-bd99-223687398748",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "cb3bcc7b-b7ed-4250-bd99-223687398748"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 5000
+      },
+      {
+        "uuid": "a6016af3-4ad1-4221-821e-fe3159bbe61c",
+        "title": "乘法测试",
+        "fullFile": "D:\\ws_workspace\\test_example\\test_mocha\\test\\dir\\multiply.test.js",
+        "file": "\\test\\dir\\multiply.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "1乘以1等于1",
+            "fullTitle": "乘法测试 1乘以1等于1",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect((0, _multiply2.default)(1, 1)).to.be.equal(1);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9690c48a-0efc-4a8e-b64f-5d28c218279a",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "9690c48a-0efc-4a8e-b64f-5d28c218279a"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 5000
+      },
+      {
+        "uuid": "a9ba9a8c-614c-4cf0-a556-5289250ed926",
+        "title": "promise.test.js - 异步测试",
+        "fullFile": "D:\\ws_workspace\\test_example\\test_mocha\\test\\promise.test.js",
+        "file": "\\test\\promise.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "异步请求应该返回一个对象",
+            "fullTitle": "promise.test.js - 异步测试 异步请求应该返回一个对象",
+            "timedOut": false,
+            "duration": 1527,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return (0, _nodeFetch2.default)('https://api.github.com').then(function (res) {\n            return res.json();\n        }).then(function (json) {\n            expect(json).to.be.an('object');\n        });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "2a854f6e-a584-4df8-87cb-778b1c3d10bf",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "2a854f6e-a584-4df8-87cb-778b1c3d10bf"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1527,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 5000
+      },
+      {
+        "uuid": "cff624df-e456-4f62-a493-1ed8c065f5f6",
+        "title": "timeout.test.js--超时测试",
+        "fullFile": "D:\\ws_workspace\\test_example\\test_mocha\\test\\timeout.test.js",
+        "file": "\\test\\timeout.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "测试应该在5000毫秒结束",
+            "fullTitle": "timeout.test.js--超时测试 测试应该在5000毫秒结束",
+            "timedOut": false,
+            "duration": 4001,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var x = true;\n        var f = function f() {\n            x = false;\n            expect(x).to.be.not.ok;\n            done();\n        };\n        setTimeout(f, 4000);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e205b909-8f16-4236-b7fa-d4e60e515023",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "e205b909-8f16-4236-b7fa-d4e60e515023"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 4001,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 5000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 5000
+  },
+  "copyrightYear": 2018
+}
