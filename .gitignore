@@ -1,3 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 test_mocha/node_modules
 .idea
+test_webpack2/node_modules
+test_webpack2/dist
+test_webpack2/package-lock.json
+test_karma/node_modules
+test_karma/package-lock.json
+test_webpack/node_modules
+test_webpack/package-lock.json
