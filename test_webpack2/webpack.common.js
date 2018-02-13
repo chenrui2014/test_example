@@ -1,20 +1,26 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');//官网说无法热替换，好像可以
 
 module.exports = {
     entry:{
-        app:'./src/index.js'
+        app:'./src/index.js',
+        another:'./src/another-module.js'
     },
     module:{
         rules:[
             {
                 test:/\.css$/,
                 exclude:/node_modules/,
-                use:[
-                    'style-loader',
-                    'css-loader'
-                ]
+                use:ExtractTextPlugin.extract({
+                    fallback:'style-loader',
+                    use:['css-loader']
+                })
+                //use:[
+                //    'style-loader',
+                //    'css-loader'
+                //]
             },
             {
                 test:/\.(png|svg|jpg|gif)$/,
@@ -46,7 +52,8 @@ module.exports = {
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
             title:'production'
-        })
+        }),
+        new ExtractTextPlugin('style.css')
     ],
     output:{
         filename:'[name].bundle.js',

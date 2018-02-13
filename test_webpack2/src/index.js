@@ -5,6 +5,10 @@ import Icon from './icon.png';
 import Data from './data.xml';
 import printMe from './print';
 
+if (process.env.NODE_ENV !== 'production') {
+       console.log('Looks like we are in development mode!');
+}
+
 function component() {
     var element = document.createElement('div');
     // var element = document.createElement('pre');
