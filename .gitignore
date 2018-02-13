@@ -8,3 +8,15 @@ test_karma/node_modules
 test_karma/package-lock.json
 test_webpack/node_modules
 test_webpack/package-lock.json
+test_webpack_dynamicImports/package-lock.json
+test_webpack_dynamicImports/node_modules
+test_webpack_dynamicImports/dist
+test_webpack_caching/node_modules
+test_webpack_caching/package-lock.json
+test_webpack_caching/dist
+test_webpack_createLib/dist
+test_webpack_createLib/package-lock.json
+test_webpack_createLib/node_modules
+test_webpack_typescript/node_modules
+test_webpack_typescript/dist
+test_webpack_typescript/package-lock.json
