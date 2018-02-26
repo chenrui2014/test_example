@@ -20,3 +20,6 @@ test_webpack_createLib/node_modules
 test_webpack_typescript/node_modules
 test_webpack_typescript/dist
 test_webpack_typescript/package-lock.json
+test_webpack_PWA/package-lock.json
+test_webpack_PWA/dist
+/test_webpack_PWA/node_modules
